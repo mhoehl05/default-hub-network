@@ -9,5 +9,5 @@ resource "azurerm_subnet" "jumphost_snet" {
   name                 = "JumphostSubnet"
   resource_group_name  = data.azurerm_resource_group.hub_rg.name
   virtual_network_name = azurerm_virtual_network.hub_vnet.name
-  address_prefixes     = ["10.1.0.0/27"]
+  address_prefixes     = ["10.=.0.0/27"]
 }
